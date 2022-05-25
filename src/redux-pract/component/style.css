@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80vw;
+    margin: auto;
+}
+
+.tbl{
+    width: 80vw;
+    border: 1px solid;
+    margin: auto;
+    padding-left: 10px;
+   
+}
+.srch{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 50%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid ;
+    font-size: 25px;
+    padding-left: 05px;
+    }

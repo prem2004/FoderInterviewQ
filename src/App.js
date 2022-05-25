@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Fragment } from 'react/cjs/react.production.min';
+import store from './redux-pract/redux/store';
+import {Provider} from 'react-redux'
+import CountryListComp from './redux-pract/component/CountryListComp'
+import Home from './redux-pract/component/Home'
+import explorer from './redux-pract/component/FolderData'
+
+const App=()=>{
+
+  return(
+  <Fragment>
+    <h1>Hello</h1>
+  
+  <Provider store={store}>
+    <Home explorer={explorer}></Home>
+   {/* <CountryListComp/> */}
+   
+  </Provider>
+
+  </Fragment>
+  )
 }
-
 export default App;
